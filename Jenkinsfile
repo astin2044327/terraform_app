@@ -8,6 +8,7 @@ pipeline {
   parameters {
     string(name: 'firstLastName', defaultValue: 'ravi dahal' , description: 'this is the name')
     booleanParam(name:'TrueFalse' , defaultValue: true , description: 'this is booleanParam' )
+    choice(name: 'Version' , choices:['1.2.0','1.2.2','1.2.3'] , description: 'this is choice param')
   }
      stages {
        stage ('build') {
