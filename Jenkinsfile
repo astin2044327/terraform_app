@@ -6,7 +6,7 @@ pipeline {
     NEW_VERSION= '1.2.3'
   }
   parameters {
-    string(name: 'firstLastName', defaultValue: ravi dahal , description: 'this is the name')
+    string(name: 'firstLastName', defaultValue: 'ravi dahal' , description: 'this is the name')
     booleanParam(name:'TrueFalse' , defaultValue: true , description: 'this is booleanParam' )
   }
      stages {
