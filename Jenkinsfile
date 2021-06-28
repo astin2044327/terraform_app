@@ -3,6 +3,7 @@ pipeline {
   environment {
     AUTHOR= 'ravi'
     EMAIL= 'abc123@email.com'
+    NEW_VERSION= '1.2.3'
   }
      stages {
        stage ('build') {
@@ -13,6 +14,11 @@ pipeline {
     }
 
    stage ('test') {
+     when {
+       expression{
+         NEW_VERSION=='1.2.0'
+       }
+     }
      steps {
          echo 'test stage' 
 }
