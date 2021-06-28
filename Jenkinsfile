@@ -14,9 +14,9 @@ pipeline {
              steps {
          echo 'build stage' 
          echo "the author of the file is ${AUTHOR} "
-               params.firstLastName
-               params.TrueFalse
-}
+               echo " ${params.firstLastName}"
+               echo "${params.TrueFalse}"
+             }
     }
 
    stage ('test') {
