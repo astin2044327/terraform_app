@@ -3,6 +3,7 @@ pipeline {
   environment {
     AUTHOR= 'ravi'
     EMAIL= 'abc123@email.com'
+  }
      stages {
        stage ('build') {
              steps {
