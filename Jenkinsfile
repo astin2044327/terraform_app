@@ -23,7 +23,7 @@ pipeline {
    stage ('test') {
      when {
        expression{
-         NEW_VERSION=='1.2.0'
+         NEW_VERSION== params.Version
        }
      }
      steps {
